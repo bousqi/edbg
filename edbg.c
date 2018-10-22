@@ -583,7 +583,7 @@ int main(int argc, char **argv)
 
   if (g_target_options.erase)
   {
-    verbose("Erasing... ");
+    verbose("Erasing...");
     target->ops->erase();
     verbose(" done.\n");
   }
