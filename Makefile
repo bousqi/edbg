@@ -6,6 +6,7 @@ SRCS = \
   edbg.c \
   target.c \
   target_atmel_cm0p.c \
+  target_atmel_cm23.c \
   target_atmel_cm3.c \
   target_atmel_cm4.c \
   target_atmel_cm7.c \
@@ -31,6 +32,7 @@ else
     HIDAPI = hidapi/mac/.libs/libhidapi.a
     CFLAGS += -Ihidapi/hidapi
   else
+    COMPILER = i686-w64-mingw32-gcc
     BIN = edbg.exe
     SRCS += dbg_win.c
     LIBS += -lhid -lsetupapi

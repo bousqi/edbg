@@ -31,8 +31,9 @@
 #include <stdbool.h>
 #include <windows.h>
 #include <setupapi.h>          
-#include <ddk/hidsdi.h>
-#include <ddk/hidpi.h>
+#include "ddk/inc/no_sal2.h"
+#include "ddk/inc/hidsdi.h"
+#include "ddk/inc/hidpi.h"
 #include "dbg.h"
 #include "edbg.h"
 

@@ -42,6 +42,7 @@ extern target_ops_t target_atmel_cm3_ops;
 extern target_ops_t target_atmel_cm4_ops;
 extern target_ops_t target_atmel_cm7_ops;
 extern target_ops_t target_atmel_cm4v2_ops;
+extern target_ops_t target_atmel_cm23_ops;
 
 static target_t targets[] =
 {
@@ -49,7 +50,8 @@ static target_t targets[] =
   { "atmel_cm3",	"Atmel SAM3X/A series",		&target_atmel_cm3_ops },
   { "atmel_cm4",	"Atmel SAM G and SAM4 series",	&target_atmel_cm4_ops },
   { "atmel_cm7",	"Atmel SAM E7x/S7x/V7x series",	&target_atmel_cm7_ops },
-  { "atmel_cm4v2",	"Atmel SAM D5x/E5x",		&target_atmel_cm4v2_ops },
+  { "atmel_cm4v2",  "Atmel SAM D5x/E5x",    &target_atmel_cm4v2_ops },
+  { "atmel_cm23",  "Atmel SAM L1x series",  &target_atmel_cm23_ops },
   { NULL, NULL, NULL },
 };
 
